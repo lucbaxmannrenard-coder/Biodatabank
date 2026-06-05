@@ -45,17 +45,17 @@ export function Solution() {
               className="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-[2rem] bg-gradient-to-br from-petrol-700 to-petrol-900 ring-1 ring-white/10"
             >
               <Image
-                src="/images/canaria-module.png"
-                alt="Module capteur du bracelet Canaria+"
+                src="/images/canaria-solution.png"
+                alt="Bracelet connecté Canaria+"
                 fill
                 sizes="(max-width: 1024px) 90vw, 40vw"
-                className="object-cover"
+                className="object-cover object-center"
               />
-              <div className="absolute bottom-4 left-4 rounded-pill bg-white/10 px-4 py-1.5 text-xs font-medium backdrop-blur-sm">
+              <div className="absolute bottom-4 left-4 rounded-pill bg-ink/75 px-4 py-1.5 text-xs font-medium text-white shadow-md ring-1 ring-white/10 backdrop-blur-sm">
                 Capteur au contact de la peau
               </div>
             </motion.div>
-            <div className="absolute -bottom-5 -left-3 hidden rounded-2xl bg-flame-500 px-5 py-4 shadow-xl sm:block">
+            <div className="absolute -bottom-5 -right-3 hidden rounded-2xl bg-flame-500 px-5 py-4 shadow-xl sm:block">
               <p className="font-display text-3xl font-bold leading-none">30 g</p>
               <p className="text-xs text-white/90">léger, on l'oublie</p>
             </div>

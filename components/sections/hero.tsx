@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 import { BatteryFull, Droplets, ShieldCheck, WifiOff } from "lucide-react";
 import { CtaButton } from "@/components/cta-button";
+import { PRODUCT } from "@/lib/site";
 
 const reassurance = [
   { icon: BatteryFull, label: "Jusqu'à 5 mois sans recharge" },
@@ -70,8 +71,8 @@ export function Hero() {
           </motion.p>
 
           <motion.div variants={item} className="mt-9 flex flex-wrap items-center gap-4">
-            <CtaButton href="#contact" variant="flame">
-              Demander un devis
+            <CtaButton href={PRODUCT.buyUrl} variant="flame">
+              Acheter sur Provence EPI
             </CtaButton>
             <CtaButton href="#fonctionnement" variant="outline" withArrow={false}>
               Voir comment ça marche
@@ -100,12 +101,12 @@ export function Hero() {
             <PulseRings reduced={!!reduced} />
 
             <Image
-              src="/images/canaria-hero.png"
+              src="/images/canaria-hero-centered.png"
               alt="Bracelet connecté Canaria+ de prévention du coup de chaleur"
               fill
               priority
               sizes="(max-width: 1024px) 90vw, 40vw"
-              className={`object-cover ${reduced ? "" : "animate-float"}`}
+              className={`object-cover object-center ${reduced ? "" : "animate-float"}`}
             />
 
             {/* Puce alerte flottante */}

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { SectionHeading } from "@/components/section-heading";
 import { Reveal } from "@/components/reveal";
 
@@ -26,14 +25,17 @@ export function Specifications() {
             intro="Un concentré de fiabilité, validé pour les environnements les plus exigeants."
           />
           <Reveal delay={0.1}>
-            <div className="mt-8 overflow-hidden rounded-card bg-paper ring-hairline">
-              <div className="relative aspect-[16/10]">
-                <Image
-                  src="/images/illu-capteur.jpg"
-                  alt="Schéma du capteur Canaria+ porté au poignet"
-                  fill
-                  sizes="(max-width: 1024px) 90vw, 40vw"
-                  className="object-contain p-6"
+            <div className="mt-8 overflow-hidden rounded-card bg-petrol-950 ring-hairline">
+              <div className="relative aspect-video">
+                <video
+                  src="/videos/canaria-spec.mp4"
+                  poster="/videos/canaria-spec-poster.png"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  aria-label="Animation : le bracelet Canaria+ se met en marche et ses caractéristiques techniques"
+                  className="absolute inset-0 size-full object-cover"
                 />
               </div>
             </div>

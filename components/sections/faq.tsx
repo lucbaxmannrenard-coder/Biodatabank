@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: "Comment l'obtenir ou équiper plusieurs personnes ?",
-    a: "Provence EPI vous conseille et vous fournit le nombre d'unités souhaité, pour un proche comme pour toute une structure. Demandez un devis via le formulaire ci-dessous : nous revenons vers vous rapidement.",
+    a: "Canaria+ s'achète directement sur la boutique officielle Provence EPI, pour un proche comme pour toute une structure. Cliquez sur « Acheter sur Provence EPI » : vous êtes redirigé vers la fiche produit pour commander en quelques clics.",
   },
 ];
 

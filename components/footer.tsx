@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AlertTriangle } from "lucide-react";
-import { NAV_LINKS, CONTACT } from "@/lib/site";
+import { NAV_LINKS, CONTACT, PRODUCT } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -76,7 +76,7 @@ export function Footer() {
             <li><Link href="#mentions-legales" className="transition hover:text-cream">Mentions légales</Link></li>
             <li><Link href="#confidentialite" className="transition hover:text-cream">Confidentialité</Link></li>
             <li><Link href="#cgv" className="transition hover:text-cream">CGV</Link></li>
-            <li><Link href="#contact" className="transition hover:text-cream">Demander un devis</Link></li>
+            <li><a href={PRODUCT.buyUrl} target="_blank" rel="noopener noreferrer" className="transition hover:text-cream">Acheter Canaria+</a></li>
           </ul>
         </div>
       </div>

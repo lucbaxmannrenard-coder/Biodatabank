@@ -23,4 +23,7 @@ export const PRODUCT = {
   name: "Canaria+",
   maker: "Biodata Bank",
   patent: "Heat Stock Tracker®",
+  /** Fiche produit officielle Provence EPI — achat direct en ligne. */
+  buyUrl:
+    "https://www.provence-epi.com/produit/bracelet-anti-chaleur-canaria-biodata-bank/",
 } as const;

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { NAV_LINKS } from "@/lib/site";
+import { NAV_LINKS, PRODUCT } from "@/lib/site";
 import { CtaButton } from "./cta-button";
 
 export function Header() {
@@ -68,8 +68,8 @@ export function Header() {
           </ul>
 
           <div className="hidden lg:block">
-            <CtaButton href="#contact" variant="flame">
-              Demander un devis
+            <CtaButton href={PRODUCT.buyUrl} variant="flame">
+              Acheter sur Provence EPI
             </CtaButton>
           </div>
 
@@ -113,8 +113,8 @@ export function Header() {
                 </motion.div>
               ))}
               <div className="mt-6">
-                <CtaButton href="#contact" variant="flame" className="text-base">
-                  Demander un devis
+                <CtaButton href={PRODUCT.buyUrl} variant="flame" className="text-base">
+                  Acheter sur Provence EPI
                 </CtaButton>
               </div>
             </div>
