@@ -80,6 +80,9 @@ export function Contact() {
                 <p className="mt-1 text-sm text-ink-soft">
                   Prévention du coup de chaleur · {PRODUCT.maker}
                 </p>
+                <p className="mt-2 font-display text-2xl font-bold text-flame-600">
+                  {PRODUCT.price.replace(".", ",")} €
+                </p>
               </div>
             </div>
 

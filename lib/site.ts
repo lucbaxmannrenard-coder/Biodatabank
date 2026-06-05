@@ -29,6 +29,9 @@ export const PRODUCT = {
   /** Fiche produit officielle Provence EPI — achat direct en ligne. */
   buyUrl:
     "https://www.provence-epi.com/produit/bracelet-anti-chaleur-canaria-biodata-bank/",
+  /** Prix de vente affiché sur la boutique Provence EPI (à mettre à jour si modifié). */
+  price: "49.90",
+  priceCurrency: "EUR",
 } as const;
 
 /** Questions fréquentes — partagées entre la section FAQ et le balisage FAQPage (SEO). */

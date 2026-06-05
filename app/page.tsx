@@ -52,8 +52,10 @@ const jsonLd = {
       offers: {
         "@type": "Offer",
         url: PRODUCT.buyUrl,
-        priceCurrency: "EUR",
+        priceCurrency: PRODUCT.priceCurrency,
+        price: PRODUCT.price,
         availability: "https://schema.org/InStock",
+        itemCondition: "https://schema.org/NewCondition",
         seller: { "@id": `${SITE_URL}/#organization` },
       },
     },
