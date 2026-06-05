@@ -1,7 +1,7 @@
 /** Données partagées du site Provence EPI. */
 
-/** URL canonique de production. À mettre à jour si un domaine personnalisé est branché. */
-export const SITE_URL = "https://siteweb-wheat.vercel.app";
+/** URL canonique de production. Domaine personnalisé branché chez Vercel. */
+export const SITE_URL = "https://canaria.provence-epi.com";
 
 export const NAV_LINKS = [
   { href: "#probleme", label: "Le danger" },
