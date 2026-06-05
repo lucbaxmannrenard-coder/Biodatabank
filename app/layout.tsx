@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque, Inter } from "next/font/google";
 import "./globals.css";
 import { SmoothScroll } from "@/components/smooth-scroll";
+import { SITE_URL } from "@/lib/site";
 
 const bricolage = Bricolage_Grotesque({
   variable: "--font-bricolage",
@@ -16,13 +17,14 @@ const inter = Inter({
   display: "swap",
 });
 
-const SITE_URL = "https://siteweb-wheat.vercel.app";
-
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Provence EPI — Canaria+ : le bracelet qui prévient le coup de chaleur",
+    default: "Canaria+ : bracelet anti coup de chaleur | Provence EPI",
     template: "%s · Provence EPI",
+  },
+  alternates: {
+    canonical: "/",
   },
   description:
     "Provence EPI distribue Canaria+, le bracelet connecté qui détecte la surchauffe du corps et alerte avant l'accident. Idéal pour protéger un proche âgé ou à risque pendant la canicule. Sans recharge, sans connexion, étanche IP67.",
@@ -54,8 +56,11 @@ export const metadata: Metadata = {
       "Le bracelet qui anticipe le coup de chaleur. Sans recharge, sans connexion, étanche IP67.",
     images: ["/images/canaria-hero.png"],
   },
-  icons: {
-    icon: "/favicon.ico",
+  category: "Santé & prévention",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
 };
 
