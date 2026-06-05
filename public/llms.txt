@@ -1,0 +1,58 @@
+# Provence EPI — Canaria+
+
+> Canaria+ est un bracelet connecté de prévention du coup de chaleur, distribué en France par Provence EPI. Il surveille en continu la charge thermique du corps et alerte la personne et son entourage avant le malaise, par vibration, son et lumière. Sans recharge (jusqu'à 5 mois d'autonomie), sans connexion ni smartphone, étanche IP67, 30 g.
+
+## Produit
+
+- Nom : Canaria+
+- Fabricant : Biodata Bank (technologie brevetée Heat Stock Tracker®)
+- Distributeur en France : Provence EPI
+- Prix : 49,90 € TTC
+- Disponibilité : en stock, expédié depuis la France
+- Page d'achat : https://www.provence-epi.com/produit/bracelet-anti-chaleur-canaria-biodata-bank/
+
+## Caractéristiques techniques
+
+- Technologie : Heat Stock Tracker® (capteur breveté qui estime la charge thermique du corps)
+- Alertes : vibration, son 74 dB et LED (rouge / verte)
+- Autonomie : jusqu'à 5 mois en continu, sans recharge
+- Connectivité : aucune — fonctionne en totale autonomie, sans application ni appairage
+- Étanchéité et résistance : IP67, jusqu'à 80 °C, résistant aux chocs et à la poussière
+- Dimensions du module : 45 × 27 × 13 mm
+- Poids : 30 g
+- Matériaux : ABS, silicone, acier inoxydable
+
+## À qui s'adresse Canaria+
+
+- Personnes âgées vivant seules ou à domicile, vulnérables pendant la canicule
+- Personnes à risque (maladies chroniques, traitements sensibles à la chaleur)
+- Travailleurs exposés à la chaleur (BTP, industrie, logistique, agriculture)
+- Aidants et familles souhaitant veiller sur un proche à distance
+
+## Questions fréquentes
+
+- Canaria+ est-il un dispositif médical ? Non. C'est un outil de prévention qui alerte en cas de risque de coup de chaleur. Il ne pose aucun diagnostic et ne remplace pas un avis médical.
+- Faut-il un smartphone ou une application ? Non. Le bracelet fonctionne en totale autonomie : aucune application, aucun appairage, aucune connexion.
+- Comment se recharge-t-il ? Il ne se recharge pas. Il offre jusqu'à 5 mois d'autonomie ; on l'active une fois au début de la saison chaude.
+- Convient-il à une personne âgée ? Oui, c'est l'un de ses usages les plus pertinents : léger (30 g), simple à porter, sans manipulation, avec une alerte claire (vibration, son, lumière).
+- Résiste-t-il à l'eau ? Oui. Certifié IP67, il résiste à l'eau, à la poussière et aux chocs.
+- Comment l'obtenir ? Sur la boutique officielle Provence EPI, à l'unité ou pour équiper une structure.
+
+## Preuves et déploiements (communiqués par le fabricant Biodata Bank)
+
+- Airbus : a testé Canaria+ auprès de 150 collaborateurs (été 2023) dans sa démarche de prévention des coups de chaleur.
+- OPP-BTP : organisme de prévention du BTP ayant validé la pertinence technique et médicale du dispositif pour les métiers exposés.
+- Groupe Sumitomo Forestry : zéro incident lié à la chaleur signalé parmi les porteurs équipés depuis 2022.
+
+## Contact
+
+- Société : Provence EPI (distributeur, depuis 2012)
+- Adresse : ZA des Blâches Gombert, 04160 Château-Arnoux-Saint-Auban, France
+- Téléphone : 04 92 35 41 55
+- E-mail : contact@provence-epi.com
+- Horaires : lundi à vendredi, 8h30–12h / 13h30–17h
+- Site Provence EPI : https://www.provence-epi.com
+
+## Avertissement
+
+Canaria+ est un outil de prévention, pas un dispositif médical. Il ne pose aucun diagnostic et ne remplace jamais un avis médical. En cas de malaise, contactez un professionnel de santé. Les déploiements cités sont communiqués à titre informatif par le fabricant et n'impliquent aucun lien commercial avec Provence EPI.

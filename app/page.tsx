@@ -37,12 +37,22 @@ const jsonLd = {
       logo: `${SITE_URL}/brand/provence-epi-logo.svg`,
       email: CONTACT.email,
       telephone: CONTACT.phoneHref.replace("tel:", ""),
+      foundingDate: String(CONTACT.since),
+      areaServed: { "@type": "Country", name: "France" },
       address: {
         "@type": "PostalAddress",
         streetAddress: "ZA des Blâches Gombert",
         postalCode: "04160",
         addressLocality: "Château-Arnoux-Saint-Auban",
         addressCountry: "FR",
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "sales",
+        telephone: CONTACT.phoneHref.replace("tel:", ""),
+        email: CONTACT.email,
+        areaServed: "FR",
+        availableLanguage: "French",
       },
       sameAs: ["https://www.provence-epi.com"],
     },
@@ -63,6 +73,12 @@ const jsonLd = {
         "Bracelet connecté de prévention du coup de chaleur : il surveille en continu la charge thermique du corps et alerte avant le malaise par vibration, son et lumière. Sans recharge (jusqu'à 5 mois d'autonomie), sans connexion ni smartphone, étanche IP67, 30 g. Idéal pour protéger une personne âgée ou à risque pendant la canicule.",
       category: "Bracelet connecté de prévention du coup de chaleur",
       brand: { "@type": "Brand", name: "Biodata Bank" },
+      manufacturer: { "@type": "Organization", name: "Biodata Bank" },
+      audience: {
+        "@type": "PeopleAudience",
+        description:
+          "Personnes âgées, personnes à risque et travailleurs exposés à la chaleur",
+      },
       weight: { "@type": "QuantitativeValue", value: 30, unitCode: "GRM" },
       material: "ABS, silicone, acier inoxydable",
       additionalProperty: PRODUCT_SPECS.map((s) => ({
