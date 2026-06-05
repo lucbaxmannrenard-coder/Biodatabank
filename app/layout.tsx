@@ -57,6 +57,9 @@ export const metadata: Metadata = {
     images: ["/images/canaria-hero.png"],
   },
   category: "Santé & prévention",
+  verification: {
+    google: "3GwxJOES-vTQD_f4TrYwDovqx8oU9_0kDT5DW5c0iRk",
+  },
   robots: {
     index: true,
     follow: true,
