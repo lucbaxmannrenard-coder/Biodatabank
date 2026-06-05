@@ -16,7 +16,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const SITE_URL = "https://www.provence-epi.com";
+const SITE_URL = "https://siteweb-wheat.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
