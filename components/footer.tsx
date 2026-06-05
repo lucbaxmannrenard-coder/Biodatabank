@@ -3,7 +3,11 @@ import Link from "next/link";
 import { AlertTriangle } from "lucide-react";
 import { NAV_LINKS, CONTACT, PRODUCT } from "@/lib/site";
 
-export function Footer() {
+/**
+ * @param linkBase préfixe des ancres de navigation. "" sur la home (#section,
+ * géré par le smooth scroll), "/" sur les pages blog (/#section → retour home).
+ */
+export function Footer({ linkBase = "" }: { linkBase?: string }) {
   return (
     <footer className="bg-petrol-950 text-petrol-100">
       {/* Disclaimer dispositif médical */}
@@ -40,11 +44,16 @@ export function Footer() {
           <ul className="mt-4 space-y-2.5">
             {NAV_LINKS.map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className="text-sm text-petrol-100/70 transition hover:text-cream">
+                <Link href={`${linkBase}${l.href}`} className="text-sm text-petrol-100/70 transition hover:text-cream">
                   {l.label}
                 </Link>
               </li>
             ))}
+            <li>
+              <Link href="/blog" className="text-sm text-petrol-100/70 transition hover:text-cream">
+                Blog
+              </Link>
+            </li>
           </ul>
         </div>
 

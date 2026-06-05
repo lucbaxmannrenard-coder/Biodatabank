@@ -65,6 +65,15 @@ export function Header() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href="/blog"
+                className="group relative text-sm font-medium text-ink-soft transition-colors hover:text-ink"
+              >
+                Blog
+                <span className="absolute -bottom-1 left-0 h-px w-0 bg-flame-500 transition-all duration-300 group-hover:w-full" />
+              </Link>
+            </li>
           </ul>
 
           <div className="hidden lg:block">
@@ -112,6 +121,19 @@ export function Header() {
                   </Link>
                 </motion.div>
               ))}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.06 * NAV_LINKS.length + 0.1 }}
+              >
+                <Link
+                  href="/blog"
+                  onClick={() => setOpen(false)}
+                  className="block py-3 font-display text-3xl font-semibold text-ink"
+                >
+                  Blog
+                </Link>
+              </motion.div>
               <div className="mt-6">
                 <CtaButton href={PRODUCT.buyUrl} variant="flame" className="text-base">
                   Acheter sur Provence EPI
