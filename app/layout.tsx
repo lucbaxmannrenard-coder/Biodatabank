@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   },
   category: "Santé & prévention",
   verification: {
-    google: "3GwxJOES-vTQD_f4TrYwDovqx8oU9_0kDT5DW5c0iRk",
+    google: "-hHlCIuFhPEFN4GdayvYL2jCajwZORBNITiiZ57J2a4",
   },
   robots: {
     index: true,
