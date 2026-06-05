@@ -12,6 +12,20 @@ import { Contact } from "@/components/sections/contact";
 import { Footer } from "@/components/footer";
 import { SITE_URL, PRODUCT, CONTACT, FAQS } from "@/lib/site";
 
+/** Validité de prix : fin de l'année prochaine (requis par Google pour les résultats enrichis « Offer »). */
+const PRICE_VALID_UNTIL = `${new Date().getFullYear() + 1}-12-31`;
+
+/** Caractéristiques techniques exposées en données structurées (lisibles par Google et les IA). */
+const PRODUCT_SPECS: { name: string; value: string }[] = [
+  { name: "Technologie", value: "Heat Stock Tracker® (capteur breveté)" },
+  { name: "Alertes", value: "Vibration, son 74 dB et LED (rouge/verte)" },
+  { name: "Autonomie", value: "Jusqu'à 5 mois en continu, sans recharge" },
+  { name: "Connectivité", value: "Aucune — fonctionne en totale autonomie" },
+  { name: "Étanchéité et résistance", value: "IP67, jusqu'à 80 °C, résistant aux chocs" },
+  { name: "Dimensions du module", value: "45 × 27 × 13 mm" },
+  { name: "Matériaux", value: "ABS, silicone, acier inoxydable" },
+];
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -49,11 +63,19 @@ const jsonLd = {
         "Bracelet connecté de prévention du coup de chaleur : il surveille en continu la charge thermique du corps et alerte avant le malaise par vibration, son et lumière. Sans recharge (jusqu'à 5 mois d'autonomie), sans connexion ni smartphone, étanche IP67, 30 g. Idéal pour protéger une personne âgée ou à risque pendant la canicule.",
       category: "Bracelet connecté de prévention du coup de chaleur",
       brand: { "@type": "Brand", name: "Biodata Bank" },
+      weight: { "@type": "QuantitativeValue", value: 30, unitCode: "GRM" },
+      material: "ABS, silicone, acier inoxydable",
+      additionalProperty: PRODUCT_SPECS.map((s) => ({
+        "@type": "PropertyValue",
+        name: s.name,
+        value: s.value,
+      })),
       offers: {
         "@type": "Offer",
         url: PRODUCT.buyUrl,
         priceCurrency: PRODUCT.priceCurrency,
         price: PRODUCT.price,
+        priceValidUntil: PRICE_VALID_UNTIL,
         availability: "https://schema.org/InStock",
         itemCondition: "https://schema.org/NewCondition",
         seller: { "@id": `${SITE_URL}/#organization` },

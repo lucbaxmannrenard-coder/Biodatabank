@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: "Canaria+ par Provence EPI — anticipez le coup de chaleur",
     description:
       "Le bracelet qui surveille la charge thermique du corps et alerte avant le malaise. Protégez vos proches pendant les fortes chaleurs.",
-    images: [{ url: "/images/canaria-hero.png", width: 1800, height: 875, alt: "Bracelet Canaria+" }],
+    images: [{ url: "/images/canaria-hero.png", width: 1800, height: 874, alt: "Bracelet Canaria+ de prévention du coup de chaleur" }],
   },
   twitter: {
     card: "summary_large_image",
